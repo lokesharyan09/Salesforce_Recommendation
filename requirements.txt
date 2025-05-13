@@ -2,6 +2,4 @@ fastapi
 uvicorn
 pandas
 openai
-os
-re
 pydantic
