@@ -61,7 +61,7 @@ async def get_llm_response(prompt: str):
         response = client.chat.completions.create(
             model="gpt-4",
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=10000
+            max_tokens=8000
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
